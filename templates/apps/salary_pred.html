@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salary Prediction</title>
+</head>
+{% block header %}
+  <h1>{% block title %}Salary Prediction{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="POST"  enctype="multipart/form-data" action="/salary">
+      <p> Upload files here to run salary prediction app.</p>
+      <label for="inputfile[]"> File Upload</label>
+       <input type="file" name="inputfile[]" multiple="">
+      <input type="submit" class="button"> Submit </input>
+  </form>
+{% endblock %}
