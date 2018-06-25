@@ -1,9 +1,9 @@
 # Data Science Deployed
 <p>An extensible end-to-end data science solution created using Flask, Celery, SQL ALchemy and Rabbit MQ , deployed on AMAZON EC2 and Microsoft server instances</p><br>
-<p>Applications that are currently served: </p>
+<p>Applications currently served: </p>
 <ol> 1. Salary Prediction System </p></ol>
 
-<p><h2>Configuration on local Dev environment</h2></p>
+<p><h2>Configuration on local development environment</h2></p>
 <ol>1. Check out the project and install dependencies from the requirements.txt </ol>
 <ol>2. Register the app on google drive API (to upload the results) and save teh credentials in the app folder.</ol>
 <ol>3. Edit the template files and save them without .template extension. </ol>
