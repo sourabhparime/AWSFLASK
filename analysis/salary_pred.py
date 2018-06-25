@@ -192,9 +192,9 @@ test_features_df = decode_labels(test_features_df)
 predictions = pd.DataFrame(predictions, columns=["salary predictions"])
 predictions = pd.concat([test_jobs, test_features_df, predictions], ignore_index=True
                         , axis=1)
-test_headers = id_col+headers['test_features']
+test_headers = headers['test_features'] + ["salary"]
 predictions.columns = test_headers
-predictions.to_csv("analysis/plots/predictions.csv")
+predictions.to_csv("analysis/plots/predictions.csv", index=False)
 print("A hand tuned Random forest regressor is used to predict the salary and the MSE is " + str(neg_mse))
 print("Check out the feature plots for more insights")
 f.close()
