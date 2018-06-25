@@ -1,0 +1,6 @@
+# properties files
+
+MAIL_USERNAME=''
+MAIL_PASSWORD=''
+SQLALCHEMY_DATABASE_URI = 'mysql://username:password@server/fl'
+CELERY_BROKER_URL='amqp://guest:guest@localhost:5672//'

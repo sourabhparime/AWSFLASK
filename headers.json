@@ -1,0 +1,1 @@
+{"train_salaries": ["jobId", "salary"], "test_features": ["jobId", "companyId", "jobType", "degree", "major", "industry", "yearsExperience", "milesFromMetropolis"], "train_features": ["jobId", "companyId", "jobType", "degree", "major", "industry", "yearsExperience", "milesFromMetropolis"]}

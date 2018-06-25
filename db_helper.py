@@ -1,12 +1,5 @@
 from __init__ import *
-from schema import Users
 from odo import odo
-
-
-def ins_usr():
-    users = Users("dfghjkl", "spaim2@uic.edu")  # type: Users
-    db.session.add(users)
-    db.session.commit()
 
 
 def push_to_db(path,filename):
@@ -16,6 +9,7 @@ def push_to_db(path,filename):
 
 
 def clear_all_tables():
+    # dropping all tables, I do not want to keep a list of emails submitted.
     db.drop_all()
     db.create_all()
     return True

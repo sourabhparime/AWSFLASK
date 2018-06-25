@@ -2,7 +2,7 @@ from celery import Celery
 
 def make_celery(app):
     celery = Celery(
-                    broker=app.config['CELERY_BROKER_URL'],include=['app'])
+                    broker=app.config['CELERY_BROKER_URL'])
     celery.conf.update(app.config)
     TaskBase = celery.Task
     class ContextTask(TaskBase):

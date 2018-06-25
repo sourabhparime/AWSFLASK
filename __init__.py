@@ -4,13 +4,14 @@ from flask_mail import Mail, Message
 from celery import Celery
 from werkzeug.utils import secure_filename
 import sys, os
-import celeryconfig
+from werkzeug.routing import Rule
+import celeryconfig, props
+
 
 
 # upload config
 UPLOAD_FOLDER = 'tmp'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'csv'}
-
 
 app = Flask(__name__)
 # mail config
@@ -20,12 +21,12 @@ app.config.update(dict(
     MAIL_PORT=587,
     MAIL_USE_TLS=True,
     MAIL_USE_SSL=False,
-    MAIL_USERNAME='psourabh9218@gmail.com',
-    MAIL_PASSWORD='Temppass123@',
+    MAIL_USERNAME=props.MAIL_USERNAME,
+    MAIL_PASSWORD=props.MAIL_PASSWORD,
     UPLOAD_FOLDER=UPLOAD_FOLDER,
 ))
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://user:password@localhost/fl'
+app.config['SQLALCHEMY_DATABASE_URI'] = props.SQLALCHEMY_DATABASE_URI
 db = SQLAlchemy(app)
 mail = Mail(app)
 
@@ -36,7 +37,8 @@ app.config['SESSION_TYPE'] = 'filesystem'
 
 # celery config
 app.config.update(
-    CELERY_BROKER_URL='amqp://guest:guest@localhost:5672//',
+    CELERY_BROKER_URL=props.CELERY_BROKER_URL,
 
 )
+
 celery = celeryconfig.make_celery(app)
