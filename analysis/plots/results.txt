@@ -1,0 +1,13 @@
+Outlier Analysis
+count    1000000.000000
+mean         116.061818
+std           38.717936
+min            0.000000
+25%           88.000000
+50%          114.000000
+75%          141.000000
+max          301.000000
+Name: salary, dtype: float64
+The upper and lower bounds for suspected outliers are 220.5 and 8.5.
+A hand tuned Random forest regressor is used to predict the salary and the MSE is 378.56407001395604
+Check out the feature plots for more insights
