@@ -17,5 +17,5 @@
 This application can be extended to any number of use cases, just add the URL in application stack page and route it like salary app  </p>
 
 <p>Demo<br>
-[embed]https://github.com/sourabhparime/AWSFLASK/blob/master/DATA%20SCIENCE%20DEPLOYED.pdf[/embed]
+https://github.com/sourabhparime/AWSFLASK/blob/master/DATA%20SCIENCE%20DEPLOYED.pdf
 </p>
