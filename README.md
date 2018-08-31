@@ -20,3 +20,4 @@ This application can be extended to any number of use cases, just add the URL in
 https://github.com/sourabhparime/AWSFLASK/blob/master/DATA%20SCIENCE%20DEPLOYED.pdf
 </p>
 <p> <h2> Improved analysis script to be uploaded soon </h2> </p>
+<p> Datasets, problem statement and analysis script inspired from Kyle</p>
