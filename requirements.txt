@@ -49,7 +49,7 @@ datashape==0.5.4
 decorator==4.2.1
 dicttoxml==1.7.4
 dill==0.2.7.1
-distributed==1.19.1
+distributed==2021.10.0
 docutils==0.14
 docx==0.2.4
 egg==0.2.0
