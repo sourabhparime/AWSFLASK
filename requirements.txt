@@ -25,7 +25,7 @@ botocore==1.10.11
 Bottleneck==1.2.1
 bz2file==0.98
 cachetools==2.1.0
-certifi==2018.1.18
+certifi==2022.12.7
 cffi==1.11.5
 chardet==3.0.4
 chest==0.2.3
